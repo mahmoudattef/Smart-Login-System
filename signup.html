@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <span class="d-none" id="username"></span>
+    <section class="text-center p-5 d-flex justify-content-center flex-wrap w-100">
+        <div class="shadw-black text-center p-4 d-flex justify-content-center flex-wrap w-50">
+            <h1>Smart Login System</h1>
+            <input oninput="validationInput()" id="nameInput" class="form-control input" type="text" placeholder="Enter Your Name">
+            <input oninput="validationInput()" id="emailInput" class="form-control input" type="text" placeholder="Enter Your Email">
+            <input oninput="validationInput()" id="passwordInput" class="form-control input " type="password" placeholder="Enter Your Password">
+            <h6 id="msgS" class="d-none">Success</h6>
+            <h5 id="msgF" class="d-none">This email is already exist</h5>
+            <h5 id="msgn" class="d-none">All inputs is required</h5>
+            <button id="signbtn" type="button" class="w-100 btn btn-outline-primary">Sign Up</button>
+            <div class="d-flex">
+                <p>You have an account?</p>
+                <a id="goLogin" href="./index.html">Sign in</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

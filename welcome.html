@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg w-100 nav-shadow navbar-dark">
+        <div class="container">
+            <h2 class="navbar-brand">SMART LOGIN</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button type="button" onclick="logOut()" class="btn btn-outline-warning"><a id="logOutBtn" href="#">Logout</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="text-center p-5 d-flex justify-content-center align-content-center vh flex-wrap w-100">
+        <div class="container shadw-black text-center p-4 d-flex justify-content-center flex-wrap w-50">
+            <div class=" row">
+                <div class="col-md-12">
+                    <div>
+                        <h1 class="w-100 d-flex" id="username"></h1>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <span class="d-none" id="username"></span>
+    <section class="text-center p-5 d-flex justify-content-center flex-wrap w-100">
+        <div class="shadw-black text-center p-4 d-flex justify-content-center flex-wrap w-50">
+            <h1>Smart Login System</h1>
+            <input id="emailInputLog" class="form-control input" type="text" placeholder="Enter Your Email">
+            <input id="passwordInputLog" class="form-control input" type="password" placeholder="Enter Your Password">
+            <h5 id="msgFaild" class="d-none">incorrect email or password</h5>
+            <h5 id="msgnone" class="d-none">All inputs is required</h5>
+            <button id="logbtn" href="./welcome.html" type="button" class="w-100 btn btn-outline-primary"><a id="toWelcome" href="#">Login</a></button>
+            <div class="d-flex">
+                <p>Don’t have an account?</p>
+                <a id="goSign" href="./signup.html">Sign up</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
